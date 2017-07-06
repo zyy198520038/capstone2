@@ -1,0 +1,72 @@
+html{
+  font-size: 16px;
+  font-family: helvetica;
+}
+.container{
+  padding-left:1.5rem;
+  padding-right:1.5rem;
+}
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 1.5rem;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+
+}
+header nav a{
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+
+#banner{
+  position: relative;
+  top:4rem;
+  background-color: grey;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#bannercopy{
+  /*border: 1px solid white;*/
+  padding-left: 2.5rem;
+  width: 30%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#banner button{
+  border-style: none;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #333;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+#banner img{
+  width: 60%;
+}
+footer{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
