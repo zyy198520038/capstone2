@@ -3,9 +3,8 @@ html{
   font-family: helvetica;
 }
 .container{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-
+  padding-left:1.5rem;
+  padding-right:1.5rem;
 }
 h1{
   font-size: 3rem;
@@ -23,28 +22,15 @@ header{
   position: fixed;
   z-index: 20;
 
-
-}
-header .logo{
-  padding-left: 1.5rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-header nav{
-  padding-right: 1.5rem;
 }
 header nav a{
   font-size: 1.5rem;
   padding-left: 1rem;
 }
-.main{
-  position: absolute;
-  top:4rem;
-}
 
 #banner{
   position: relative;
+  top:4rem;
   background-color: grey;
   display: flex;
   justify-content: flex-start;
@@ -73,152 +59,12 @@ header nav a{
 }
 
 #banner img{
-  width: 60vw;
-  height: 40vw;
+  width: 60%;
 }
-
-#stories{
-  position: relative;
-  display: flex;
-  justify-content: space-start;
-  background: #bcbcbc;
-
-}
-.featured_story{
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 1.5rem;
-  width: calc(100vw - 30.5rem);
-}
-
-.featured_story h1{
-  padding: 2rem 0;
-
-}
-.featured_story p{
-  padding-top:1rem;
-
-}
-
-.featured_story img{
-  width: calc(100vw - 30.5rem);
-  height: auto;
-}
-
-
-
-#story_list{
-  display: flex;
-  flex-direction: column;
-  padding-top: 1rem;
-  border-left: grey 1px solid;
-  width:423px;
-}
-
-.story{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  transition:background-color 400ms linear;
-
-
-}
-.story img{
-  width: 35%;
-  padding: 1rem 1rem;
-
-}
-.story h3{
-  padding-top: 1rem;
-
-}
-.story a{
-  display: block;
-  color:blue;
-  padding-top: 1rem;
-
-
-}
-
-.story:hover{
-  background-color: grey;
-
-}
-
-#courses{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 3rem;
-  background-color: #b1b1b1;
-}
-
-#courses h1{
-  padding-bottom: 2rem;
-}
-
-#courses .description{
-    background-color: white;
-    padding: 1rem;
-    margin-top: -5px;
-    transition: background-color 400ms ease-in;
-
-}
-#courses .description:hover{
-  background-color: black;
-}
-.description h3,p{
-    padding-top: 1rem;
-    line-height: 1.5rem;
-}
-.description img{
-  width: 15vw;
-}
-
-.row{
-  display: flex;
-}
-.single_course{
-
-  padding: 1rem;
-  height: auto;
-  width: 20vw;
-
-}
-
-
-.single_course img{
-  overflow: hidden;
-  width: 20vw;
-}
-
-#exhibit{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 3rem;
-  background-color: #bebebe;
-}
-#exhibit h1{
-  padding-bottom: 2rem;
-}
-
-.featured_story video{
-  width: calc(100vw - 30.5rem);
-  height: auto;
-}
-
-#exhibit #story_list{
-  border-left: none;
-}
-
 footer{
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   border-top: 1px solid grey;
   padding-top: 1rem;
   padding-bottom: 2rem;
