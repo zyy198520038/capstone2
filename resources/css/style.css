@@ -7,6 +7,9 @@ html{
   padding-right: 1.5rem;
 
 }
+.mobile{
+  display: none;
+}
 h1{
   font-size: 3rem;
 }
@@ -41,6 +44,21 @@ header nav a{
   font-size: 1.5rem;
   padding-left: 1rem;
 }
+
+@media only screen and (max-width:480px){
+  .mobile{
+    display:flex;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width:90vw;
+  }
+  .desktop{
+    display: none;
+
+  }
+}
+
 .main{
   position: absolute;
   top:4rem;
@@ -55,6 +73,8 @@ header nav a{
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+
+
 
 #bannercopy{
   /*border: 1px solid white;*/
@@ -78,6 +98,7 @@ header nav a{
 #banner img{
   width: 60vw;
   height: 40vw;
+
 }
 
 #stories{
@@ -85,6 +106,29 @@ header nav a{
   display: flex;
   justify-content: space-start;
 
+}
+
+@media only screen and (max-width:480px){
+  #banner{
+    flex-direction: column;
+    width: 100vw;
+    padding: 0;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  #banner img{
+    width: 100vw;
+    height: 45vw;
+    overflow: hidden;
+  }
+  #banner h1,h2,button{
+    width: 90vw;
+
+  }
+  #bannercopy{
+    /*border: 1px solid white;*/
+    padding: 1rem 1.5rem;
+  }
 }
 .featured_story{
   display: flex;
@@ -106,7 +150,11 @@ header nav a{
   width: calc(100vw - 30.5rem);
   height: auto;
 }
-
+@media only screen and (max-width:480px){
+  .featured_story{
+    display: none;
+  }
+}
 
 
 #story_list{
@@ -124,6 +172,9 @@ header nav a{
   transition:background-color 400ms linear;
 
 
+}
+.image_mobile{
+  display: none;
 }
 .story img{
   width: 35%;
@@ -145,6 +196,32 @@ header nav a{
 .story:hover{
   background-color: grey;
 
+}
+
+@media only screen and (max-width:480px){
+  .image_full{
+    display: none;
+  }
+  .image_mobile{
+    display: flex;
+  }
+  #story_list{
+    padding-top: 0;
+    border-left: none;
+    width:95vw;
+    justify-content: center;
+  }
+
+  .story{
+    flex-direction: column;
+  }
+  .story .description{
+    padding: 2rem 0;
+  }
+  .story img{
+    width: 95vw;
+    padding:1.5rem;
+  }
 }
 
 #courses{
