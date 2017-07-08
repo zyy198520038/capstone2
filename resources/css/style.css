@@ -77,11 +77,13 @@ html{
 }
 h1{
   font-size: 3rem;
+  line-height: 3.5rem;
   font-weight: 900;
   color: #3e3e3e;
 }
 h2{
   font-size: 1.2rem;
+  line-height: 2rem;
   font-weight: 700;
   color: #3e3e3e;
 }
@@ -173,8 +175,8 @@ header nav a{
   color: white;
   font-size: 1.5rem;
   background-color: #4A4A4A;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 #banner img{
